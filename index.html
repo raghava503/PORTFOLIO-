@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gudiwada Raghava | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+     /* :root {
+      --primary-color: #60a5fa;
+      --background-color: #f0f2f5;
+      --text-color: #333;
+      --card-bg: white;
+      --card-shadow: rgba(0, 0, 0, 0.05);
+    } */
+
+    /*[data-theme="dark"] */
+    :root { 
+      --primary-color: #3b82f6;
+      --background-color: #1f2937;
+      --text-color: #e5e7eb;
+      --card-bg: #374151;
+      --card-shadow: rgba(255, 255, 255, 0.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+    nav {
+      background: var(--primary);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+
+    header, footer {
+      text-align: center;
+      background-color: #1f2937;
+      color: white;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header a {
+      color: var(--primary-color);
+    }
+
+    .theme-toggle {
+      margin-top: 10px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background: var(--card-bg);
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--card-shadow);
+      transition: background 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: var(--text-color);
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      border-left: 5px solid var(--primary-color);
+      padding-left: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style: disc;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    footer {
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+
+    .responsive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <header>
+    <h1>Gudiwada Raghava</h1>
+    <p>Vijayawada, India | +91-7989069503 | <a href="mailto:gudiwadaraghava@gmail.com">gudiwadaraghava@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/raghava503" target="_blank">raghava503</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/gudiwada-raghava-1b0b6a1b2/" target="_blank">Gudiwada Raghava</a></p>
+    <!--<button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>-->
+  </header>
+
+  <main>
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>Ambitious professional seeking a challenging position that utilizes expertise as a .NET Developer, demonstrating strong technical proficiency across software and hardware domains.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="responsive-grid">
+        <div>
+          <h3>Hotel Management System</h3>
+          <p>ASP.NET MVC, C#, SQL Server – Web-based room booking and billing system with ADO.NET and SQL storage.</p>
+        </div>
+        <div>
+          <h3>QR Code Generator</h3>
+          <p>ASP.NET MVC, C# – Generated QR codes, stored user data in SQL Server, and used scanner interface.</p>
+        </div>
+        <div>
+          <h3>Calculator Web App</h3>
+          <p>ASP.NET MVC, jQuery, SQL Server – Responsive calculator for arithmetic operations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="responsive-grid">
+        <div>
+          <h3>Pantech Prolabs (Feb–May 2025)</h3>
+          <ul>
+            <li>Collaborated with remote team and mentors.</li>
+            <li>Supported key project development.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Smart Home Solutions (Oct 2023–Jan 2024)</h3>
+          <ul>
+            <li>Worked on Raspberry Pi & MicroPython.</li>
+            <li>Performed system analysis and debugging.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Microlink Solutions (Aug–Oct 2023)</h3>
+          <ul>
+            <li>Worked with Arduino Uno & ESP32.</li>
+            <li>Designed PCBs and tested circuits.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C#, SQL, HTML, JavaScript</li>
+        <li><strong>Frameworks:</strong> ASP.NET MVC, .NET Core, Web API</li>
+        <li><strong>Database:</strong> SQL Server</li>
+        <li><strong>Tools:</strong> Visual Studio, Git</li>
+        <li><strong>Hardware:</strong> Raspberry Pi, Arduino Uno</li>
+        <li><strong>OS:</strong> Windows XP/7/8/10</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>MBA in Data Science</strong>, KI University – Expected Jul 2026</li>
+        <li><strong>B.Sc (Maths, Electronics, Computer Science)</strong>, KBN College – May 2024</li>
+      </ul>
+    </section>
+
+    <section id="accomplishments">
+      <h2>Accomplishments</h2>
+      <ul>
+        <li>Completed "Get Started with C# – Part 1" project</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <p>English: Fluent | Telugu: Fluent | Hindi: Spoken</p>
+    </section>
+
+    <section id="interests">
+      <h2>Hobbies & Interests</h2>
+      <p>Listening to music, watching movies, reading books, playing cricket</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gudiwada Raghava</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute("data-theme") === "dark";
+      html.setAttribute("data-theme", isDark ? "light" : "dark");
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('main section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
